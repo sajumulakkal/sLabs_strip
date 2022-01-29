@@ -17,7 +17,14 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx'],
         fallback: {
-             "crypto": false 
+             "crypto": false,
+	     "https": false,
+	     "url": false,	
+	     "querystring": false,
+	     "zlib": false,
+	     "util": false,
+	     "console": false,
+	     "path": false 
             },
             alias: {
                 'ejs': 'ejs.min.js'
